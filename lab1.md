@@ -18,7 +18,7 @@ bash: cd: Hello.java: Not a directory
 ```
 * The working directory was ```/home/lecture1```
 * There was an output because an error showed for the command
-* There is an error because we are attempting to change the directory to the location of a file, which is not a directory path
+* There is an error because we are attempting to change the directory to the location of a file, which is not a directory
 ```
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
