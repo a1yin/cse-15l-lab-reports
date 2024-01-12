@@ -1,3 +1,5 @@
+# cd no commands
+
 ```  
 [user@sahara ~]$ cd
 [user@sahara ~]$
@@ -6,6 +8,8 @@
 * `/home`  
 * There was no output because the command does not change the working directory as there were no arguments given to the command line, and the command naturally does not output anything anyway.  
 * The output is not an error  
+
+# cd directory argument
 
 ```
 [user@sahara ~]$ cd lecture1
@@ -16,6 +20,8 @@
 * There was no output because changing directories does not output anything into the terminal  
 * It is not an error  
 
+# cd file argument
+
 ```
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
@@ -24,6 +30,8 @@ bash: cd: Hello.java: Not a directory
 * The working directory was `/home/lecture1`
 * There was an output because an error showed for the command
 * There is an error because we are attempting to change the directory to the location of a file, which is not a directory  
+
+# ls no arguments
 
 ```
 [user@sahara ~/lecture1]$ ls
@@ -34,6 +42,7 @@ Hello.class  Hello.java  messages  README
 * The output included all the files and directories currently in the working directory because no arguments were given
 * There is no error  
 
+# ls directory argument
 ```
 [user@sahara ~/lecture1]$ ls /home
 lecture1
@@ -43,6 +52,7 @@ lecture1
 * The output included all the files and directories in the directory of the argument given
 * There is no error  
 
+# ls file argument
 ```
 [user@sahara ~/lecture1]$ ls Hello.java
 Hello.java
@@ -51,6 +61,8 @@ Hello.java
 * The working directory was `/home/lecture1`
 * The output included just the file that was given as an argument
 * There is no error  
+
+# cat no argument
 
 ```
 [user@sahara ~]$ cat
@@ -61,6 +73,7 @@ Hello.java
 * There was no output, but the command line will continue to take keyboard entries and print out a copy of that entry
 * There is no error  
 
+# cat directory argument
 ```
 [user@sahara ~]$ cat lecture1
 cat: lecture1: Is a directory
@@ -69,6 +82,8 @@ cat: lecture1: Is a directory
 * The working directory was `/home`
 * There was an output because there was an error message
 * There is an error because `cat` can only read files not directories  
+
+# cat file argument
 
 ```
 [user@sahara ~]$ cat lecture1/Hello.java
