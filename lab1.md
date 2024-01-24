@@ -1,12 +1,12 @@
 # cd no commands
 
 ```  
-[user@sahara ~]$ cd
+[user@sahara ~/wavelet]$ cd
 [user@sahara ~]$
 ```
   
-* `/home`  
-* There was no output because the command does not change the working directory as there were no arguments given to the command line, and the command naturally does not output anything anyway.  
+* `/home/wavelet` changed back to `/home`
+* There was no output because changing directories does not output anything into the terminal
 * The output is not an error  
 
 # cd directory argument
