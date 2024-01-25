@@ -42,13 +42,13 @@ class ChatServer {
 }
 ```
 Screenshot 1
-![image](Screenshot 2024-01-25 145141.png)
+![image](part1ss1.png)
 * Starting the main method in the ChatServer class, a static method from the Server class starts the server, and inputting a `Handler` object. In this object, there exists a `handleRequest` method, which takes the URL input from the user and does some action describes in the method.
 * The static method `start` in the `Server` class takes input an integer port and a `Handler` object. The `handleRequest` method in the object takes in an URL of type URI and returns a string. The port field is always an integer that is parsed from `args[0]`. All messages and users are input into the HashMap as strings.
 * In this request, the Hash Map gets added an entry of key `Andrew` and value `Hello World`. The fields within the if-block are also set based on the '&' and '=' splits. The port number is not changed in the `handleRequest` method
 
 Screenshot 2
-![image](Screenshot 2024-01-25 145248.png)
+![image](part1ss2.png)
 * The static method from the Server class starts the server, and inputting a `Handler` object. In this object, there exists a `handleRequest` method, which takes an URL input from the user and does some action describes in the method.
 * The static method `start` in the `Server` class takes input an integer port and a `Handler` object. The `handleRequest` method in the object takes in an URL of type URI and returns a string. The port field is always an integer that is parsed from `args[0]`. All messages and users are input into the HashMap as strings.
 * In this request, the Hash Map gets added another entry of key `Someone` and value `Hi`, now there being 2 keys in the map. The fields within the if-block are set based on the '&' and '=' splits of the new URL. The port number is not changed in the `handleRequest` method.
