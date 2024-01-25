@@ -1,3 +1,4 @@
+# Part 1
 ChatServer Code
 ```
 import java.io.IOException;
@@ -40,5 +41,7 @@ class ChatServer {
     }
 }
 ```
+Screenshot 1
 
+Screenshot 2
 
