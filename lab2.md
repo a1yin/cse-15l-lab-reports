@@ -54,7 +54,12 @@ Screenshot 2
 * In this request, the Hash Map gets added another entry of key `Someone` and value `Hi`, now there being 2 keys in the map. The fields within the if-block are set based on the '&' and '=' splits of the new URL. The port number is not changed in the `handleRequest` method.
 
 # Part 2
+![image](part2ss1.png)
+![image](part2ss2.png)
+![image](part2ss3.png)
 
+# Part 3
+Something I learned from lab in week 2 was using the query in a URL to interact with certain parts of a program. I thought that was pretty interesting, as well as deploying our own server.
 
 
 
