@@ -196,3 +196,107 @@ $ find ./technical -mtime -7 -type d
 ./technical/plos
 ```
 * This option allows us to specify the modification time, which can be useful if we want to find something modified something a long ago or recently
+
+# Sources (ChatGPT)
+### Prompt
+* give me four interesting command-line options for 'find', using examples for files and directories, and explain how they are useful
+### Output
+```
+
+Sure, let's explore the find command. Here are four interesting command-line options for find:
+
+-type option: This option allows you to specify the type of file you want to search for, such as regular files, directories, symbolic links, etc.
+
+Example 1: Find all regular files in the current directory and its subdirectories:
+
+bash
+Copy code
+find ./technical -type f
+Example 2: Find all directories in the current directory and its subdirectories:
+
+bash
+Copy code
+find ./technical -type d
+This is useful when you want to filter search results based on the type of file.
+
+-name option: This option allows you to search for files with a specific name or pattern.
+
+Example 1: Find all files with the name "README.md" in the current directory and its subdirectories:
+
+arduino
+Copy code
+find ./technical -name "README.md"
+Example 2: Find all files with names starting with "file" in the current directory and its subdirectories:
+
+arduino
+Copy code
+find ./technical -name "file*"
+This is useful when you want to find files with specific names or patterns.
+
+-exec option: This option allows you to execute a command on each file found by find.
+
+Example 1: Print the absolute path of each file found:
+
+bash
+Copy code
+find ./technical -exec echo {} \;
+Example 2: Delete all files with the extension ".tmp":
+
+bash
+Copy code
+find ./technical -name "*.tmp" -exec rm {} \;
+This is useful when you want to perform actions on the files found by find.
+
+-mtime option: This option allows you to search for files based on their last modification time.
+
+Example 1: Find files modified in the last 7 days:
+
+arduino
+Copy code
+find ./technical -mtime -7
+Example 2: Find files modified more than 30 days ago:
+
+arduino
+Copy code
+find ./technical -mtime +30
+This is useful when you want to find files based on their age or recent modifications.
+```
+### Prompt
+* use other options
+### Output
+```
+Certainly! Let's explore two more options for the find command:
+
+-size option: This option allows you to search for files based on their size.
+
+Example 1: Find all files greater than 1 megabyte in size:
+
+sh
+Copy code
+find ./technical -size +1M
+Example 2: Find all files smaller than 100 kilobytes in size:
+
+sh
+Copy code
+find ./technical -size -100k
+This is useful when you want to filter files based on their size, which can help manage disk space or find specific types of files.
+
+-user option: This option allows you to search for files owned by a specific user.
+
+Example 1: Find all files owned by the user "john":
+
+sh
+Copy code
+find ./technical -user john
+Example 2: Find all files owned by the current user:
+
+sh
+Copy code
+find ./technical -user $(whoami)
+This is useful when you want to find files owned by a particular user, which can be helpful for managing permissions or identifying files associated with specific users
+```
+## How I Used ChatGPT Output
+* For each option ChatGPT gave me, I used the command to input into my bash to observe the output
+* I also used the description of the options to formulate my understanding of the command to write it's use cases in the lab report
+* I asked for more options because the -exec option seemed hard to explain, and because one of the outputs was about deleting files, something I did not want to do
+
