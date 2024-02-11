@@ -261,9 +261,12 @@ Copy code
 find ./technical -mtime +30
 This is useful when you want to find files based on their age or recent modifications.
 ```
+
 ### Prompt
 * use other options
+
 ### Output
+
 ```
 Certainly! Let's explore two more options for the find command:
 
