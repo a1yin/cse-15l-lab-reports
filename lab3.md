@@ -73,6 +73,7 @@ find ./technical -type f
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
 ```
+* This command finds all type files in directory technical
 ### Directories
 ```
 $ find ./technical -type d
@@ -88,6 +89,7 @@ $ find ./technical -type d
 ./technical/government/Post_Rate_Comm
 ./technical/plos
 ```
+* This command finds all type directories in the directory technical
 * This option will allow us to specify what exactly we are looking for, whether it be files, directories or something else, we can filter out other types we don't need
 ## -name
 ### Directories
@@ -95,6 +97,7 @@ $ find ./technical -type d
 $ find ./technical -name "bio*"
 ./technical/biomed
 ```
+* This command finds any directory or file with name that starts with "bio" 
 ### Files
 ```
 $ find ./technical -name "*txt"
@@ -115,6 +118,7 @@ $ find ./technical -name "*txt"
 ./technical/911report/chapter-8.txt
 ./technical/911report/chapter-9.txt
 ```
+* This command finds any file with name that ends with "txt"(to filter .txt files)
 * This allows us to search for files or directories with a certain pattern in their names or extensions, we can find all files with an extension or naming pattern
 ## -size
 ### Files
@@ -150,6 +154,7 @@ $ find ./technical -size +100k
 ./technical/government/Gen_Account_Office/Sept27-2002_d02966.txt
 ./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 ```
+* This command is intended to find all files of size 100 kb or more
 ### Directories
 ```
 $ find ./technical -size -50k -type d
@@ -165,6 +170,7 @@ $ find ./technical -size -50k -type d
 ./technical/government/Post_Rate_Comm
 ./technical/plos
 ```
+* This command is intended to find all directories of size 50 kb or less
 * This option allows you to find files and directories based on their size, which can useful if we want to find certain files or directories of a certain range of sizes
 ## -mtype
 ### Files
@@ -180,6 +186,7 @@ $ find ./technical -mtime -7 -type f
 ./technical/911report/chapter-13.4.txt
 ./technical/911report/chapter-13.5.txt
 ```
+* This command intends to find all files in technical that have been modified within the last 7 days
 ### Directories
 ```
 $ find ./technical -mtime -7 -type d
@@ -195,6 +202,7 @@ $ find ./technical -mtime -7 -type d
 ./technical/government/Post_Rate_Comm
 ./technical/plos
 ```
+* This command intensd to find all directories in technical that have modified within the last 7 days
 * This option allows us to specify the modification time, which can be useful if we want to find something modified something a long ago or recently
 
 # Sources (ChatGPT)
